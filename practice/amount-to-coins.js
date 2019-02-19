@@ -91,7 +91,7 @@ function amountToCoins(cents) {
         nickelCount="";
     }
     if (pennyCount>0){
-        pennyCount="$0.01"+pennyCount+"<br>";
+        pennyCount="$0.01: "+pennyCount+"<br>";
     } else{
         pennyCount="";
     }
