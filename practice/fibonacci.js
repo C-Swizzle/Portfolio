@@ -5,7 +5,11 @@ function fibonacci(x,y,z) {
         newarray[i]=newarray[i-1] + newarray[i-2];
 
     }
-    return newarray.join(",  ");
+    for (var i=0;i<newarray.length;i++){
+        newarray[i]=addCommas(newarray[i]);
+
+    }
+    return newarray.join("<br>");
 }
 console.log(fibonacci(1,2));
 
@@ -17,7 +21,29 @@ function tribonacci (arr, x) {
     return newArray;
 }
 console.log(tribonacci([1,2,3], 10));
-
+function addCommas(num){
+    var nlength=num.toString().length;
+    if (nlength>3&&num===parseInt(num)){
+        var count=1;
+        var tempArray=[];
+        var returnArray=[];
+        for (var i=nlength-1;i>=0;i--){
+            if(count%4===0){
+                tempArray.push(",");
+                count=1;
+                i++;
+            }else{
+                tempArray.push(num.toString()[i]);
+                count++;
+            }
+        }
+        for (var i=tempArray.length-1;i>=0;i--){
+            returnArray.push(tempArray[i]);
+        }
+        return returnArray.join("");
+    }
+    return num;
+}
 $(document).on("click","#fibonacci-check-submit", function(e){
     e.preventDefault();
     var numToCheck1=Number($("#fibonacci-check-input-term1").val());
@@ -30,7 +56,7 @@ $(document).on("click","#fibonacci-check-submit", function(e){
     }
     // console.log(numToCheck);
     
-    $("#fibonacci-check-write").text(fibonacci(numToCheck1,numToCheck2,generateMany));
+    $("#fibonacci-check-write").html(fibonacci(numToCheck1,numToCheck2,generateMany));
 });
 $(document).on("click","#fibonacci-check-clear", function(e){
     e.preventDefault();
