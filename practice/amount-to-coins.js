@@ -45,7 +45,57 @@ function amountToCoins(cents) {
         pennyCount++;
     }
     }
-    return "$100: " + hundredDollarCount + "<br>$50: "+fiftyDollarCount+"<br>$20: "+twentyDollarCount+"<br>$10: "+tenDollarCount+"<br>$5: "+fiveDollarCount+ "<br>$1: " +oneDollarCount+"<br>$0.25: "+quarterCount+"<br>$0.10: "+dimeCount+"<br>$0.05: "+nickelCount+"<br>$0.01: "+pennyCount;
+    if(hundredDollarCount>0){
+        hundredDollarCount="$100: " + hundredDollarCount +"<br>";
+    } else{
+        hundredDollarCount="";
+    }
+    if(fiftyDollarCount>0){
+        fiftyDollarCount="$50: "+fiftyDollarCount+"<br>";
+    } else{
+        fiftyDollarCount="";
+    }
+    if(twentyDollarCount>0){
+        twentyDollarCount="$20: "+twentyDollarCount+"<br>";
+    } else{
+        twentyDollarCount="";
+    }
+    if(tenDollarCount>0){
+        tenDollarCount="$10: "+tenDollarCount+"<br>";
+    } else{
+        tenDollarCount="";
+    }
+    if(fiveDollarCount>0){
+        fiveDollarCount="$5: "+fiveDollarCount+"<br>";
+    } else{
+        fiveDollarCount="";
+    }
+    if(oneDollarCount>0){
+        oneDollarCount="$1: "+oneDollarCount+"<br>";
+    } else{
+        oneDollarCount="";
+    }
+    if(quarterCount>0){
+        quarterCount="$0.25: "+quarterCount+"<br>";
+    } else{
+        quarterCount="";
+    }
+    if(dimeCount>0){
+        dimeCount="$0.10: "+dimeCount+"<br>";
+    } else{
+        dimeCount="";
+    }
+    if(nickelCount>0){
+        nickelCount="$0.05: "+nickelCount+"<br>";
+    } else{
+        nickelCount="";
+    }
+    if (pennyCount>0){
+        pennyCount="$0.01"+pennyCount+"<br>";
+    } else{
+        pennyCount="";
+    }
+    return hundredDollarCount +fiftyDollarCount+twentyDollarCount+tenDollarCount+fiveDollarCount+oneDollarCount+quarterCount+dimeCount+nickelCount+pennyCount;
 }
 $(document).on("click","#dollars-check-submit",function(e){
     e.preventDefault();
