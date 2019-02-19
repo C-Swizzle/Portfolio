@@ -63,34 +63,43 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
-            <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-primary">Prime Checker</h5>
-              <p class="card-text">Checks if a number is prime. Only works for smaller numbers, less than the 32 bit integer overflow.
-
-              </p>
-              <form>
-                <input type="text" id="prime-check-input">
-              <button  id="prime-check-submit"class="btn btn-primary">Submit</button>
-            </form>
-            <p class="card-text" id="prime-check-write"></p>
-            </div>
-            
-          </div></div>
-          <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+            <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
+                <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Dollars and Cents</h5>
+                  <p class="card-text">Given an amount of dollars and cents as a number, it will tell you the most efficient way to break down that dollar amount.
+                  </p>
+                  
+                  <form >
+                    <input  type="text" id="dollars-check-input">
+                  <button  id="dollars-check-submit"class="btn btn-primary">Submit</button>
+                  <div class="form-check">
+                    <input  type="checkbox" class="form-check-input" id="hundred-dollar-checkbox">
+                    <label class="form-check-label" for="hundred-dollar-checkbox">Use $100 bills?</label>
+                  </div>
+                  <div class="form-check">
+                    <input  type="checkbox" class="form-check-input" id="fifty-dollar-checkbox">
+                    <label class="form-check-label" for="fifty-dollar-checkbox">Use $50 bills?</label>
+                  </div>
+                </form>
+                <p class="card-text" id="dollars-check-write"></p>
+                </div>
+                
+              </div></div>
+          
+          <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
               <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-primary">Fibonacci Generator</h5>
                 <p class="card-text">Generate a Fibonacci Sequence of your own! Tell it the first two terms and how many terms you'd like to see (less than 100)!
                 </p>
-                <form>
+                <form >
                   <label for="fibonacci-check-input-term1">First term</label><br>
-                  <input type="text" id="fibonacci-check-input-term1"><br>
+                  <input  type="text" id="fibonacci-check-input-term1"><br>
                   <label for="fibonacci-check-input-term2">Second term</label><br>
-                  <input type="text" id="fibonacci-check-input-term2"><br>
+                  <input  type="text" id="fibonacci-check-input-term2"><br>
                   <label for="fibonacci-check-input-many">How many terms to generate</label><br>
-                  <input type="text" id="fibonacci-check-input-many"><br><br>
+                  <input  type="text" id="fibonacci-check-input-many"><br><br>
                 <button  id="fibonacci-check-submit"class="btn btn-primary">Submit</button>
                 <button  id="fibonacci-check-clear" class="btn btn-danger">Clear</button>
               </form>
@@ -100,19 +109,19 @@
             </div></div>
 
           
-          <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+          <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
               <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-primary">Quadratic Formula</h5>
                 <p class="card-text">Given a parabola written in expanded ax<sup>2</sup>+bx+c=0 form, input the a, b, and c values to get the roots! Supports Imaginary number answers!
                 </p>
-                <form>
+                <form >
                   <label for="quadratic-check-input-a">a</label><br>
-                  <input type="text" id="quadratic-check-input-a"><br>
+                  <input  type="text" id="quadratic-check-input-a"><br>
                   <label for="quadratic-check-input-b">b</label><br>
-                  <input type="text" id="quadratic-check-input-b"><br>
+                  <input  type="text" id="quadratic-check-input-b"><br>
                   <label for="quadratic-check-input-c">c</label><br>
-                  <input type="text" id="quadratic-check-input-c"><br><br>
+                  <input  type="text" id="quadratic-check-input-c"><br><br>
                 <button  id="quadratic-check-submit"class="btn btn-primary">Submit</button>
                 <button  id="quadratic-check-clear" class="btn btn-danger">Clear</button>
               </form>
@@ -120,7 +129,8 @@
               </div>
               
             </div></div>
-            <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+            
+            <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
                 <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title text-primary">Random Number Generation</h5>
@@ -128,15 +138,15 @@
                     It is expected to give different answers for the same number, as each time is different RNG.
                   </p>
                   
-                  <form>
-                    <input type="text" id="rng-check-input">
+                  <form >
+                    <input  type="text" id="rng-check-input">
                   <button  id="rng-check-submit"class="btn btn-primary">Submit</button>
                 </form>
                 <p class="card-text" id="rng-check-write"></p>
                 </div>
                 
               </div></div>
-              <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+              <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
                   <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title text-primary">Unique character check</h5>
@@ -144,52 +154,53 @@
       
                     </p>
                     <p class="card-subtitle">Example: "Hello how are you" becomes "helo waryu"</p><br>
-                    <form>
-                      <input type="text" id="unique-char-check-input">
+                    <form >
+                      <input  type="text" id="unique-char-check-input">
                     <button  id="unique-char-check-submit"class="btn btn-primary">Submit</button>
                   </form>
                   <p class="card-text" id="unique-char-check-write"></p>
                   </div>
                   
                 </div></div>
-              <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
-                  <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary">Dollars and Cents</h5>
-                    <p class="card-text">Given an amount of dollars and cents as a number, it will tell you the most efficient way to break down that dollar amount.
-                    </p>
+                
+                <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
+                    <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Prime Checker</h5>
+                      <p class="card-text">Checks if a number is prime. Only works for smaller numbers, less than the 32 bit integer overflow.
+        
+                      </p>
+                      <form >
+                        <input  type="text" id="prime-check-input">
+                      <button  id="prime-check-submit"class="btn btn-primary">Submit</button>
+                    </form>
+                    <p class="card-text" id="prime-check-write"></p>
+                    </div>
                     
-                    <form>
-                      <input type="text" id="dollars-check-input">
-                    <button  id="dollars-check-submit"class="btn btn-primary">Submit</button>
-                  </form>
-                  <p class="card-text" id="dollars-check-write"></p>
-                  </div>
-                  
-                </div></div>
-                <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+                  </div></div>
+                <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
                     <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title text-primary">Simple Factorial</h5>
                       <p class="card-text">Given an positive integer, find the factorial. Doesn't work for large inputs
                       </p>
                       
-                      <form>
-                        <input type="text" id="factorial-check-input">
+                      <form >
+                        <input  type="text" id="factorial-check-input">
                       <button  id="factorial-check-submit"class="btn btn-primary">Submit</button>
                     </form>
                     <p class="card-text" id="factorial-check-write"></p>
                     </div>
                     
                   </div></div>
-                  <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+                  <div class="col-md-4 mb-4"><div class="card" style="width: 100%; height: 100%;">
                     <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title text-primary">Simple Add Commas to Number</h5>
                       <p class="card-text">Given a number, add commas to it! Works with decimals and negatives as well!</p>
                       
-                      <form>
-                        <input type="text" id="comma-check-input">
+                      <form >
+                        <input  type="text" id="comma-check-input">
                       <button  id="comma-check-submit"class="btn btn-primary">Submit</button>
                     </form>
                     <p class="card-text" id="comma-check-write"></p>

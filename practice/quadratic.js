@@ -1,4 +1,7 @@
 function quadratic(a,b,c) {
+    if(a===0&&b===0&&c===0){
+        return "";
+    }
     var ans1;
     var ans2;
     var store;
@@ -18,7 +21,7 @@ function quadratic(a,b,c) {
        decidor = -decidor;
        decidor = Math.sqrt(decidor);
        decidor =decidor/denominator;
-       decidor = decidor + "i";
+       decidor = decidor + "<i style='color:darkred !important'><strong>i</strong></i>";
        store=-b/denominator;
        if (store!==0) {
        ans1=store + "+" +  decidor;
@@ -29,7 +32,7 @@ function quadratic(a,b,c) {
        }
     }
   
-    return "x=" + ans1 + "<br> x=" + ans2;
+    return "Input: "+a+"x<sup>2</sup>+"+b+"x+"+ c+"<br>" + "x=" + ans1 + "<br> x=" + ans2;
 }
 $(document).on("click","#quadratic-check-submit", function(e){
     e.preventDefault();
@@ -40,7 +43,7 @@ $(document).on("click","#quadratic-check-submit", function(e){
    
     // console.log(numToCheck);
     
-    $("#quadratic-check-write").html("Input: "+numToCheck1+"x<sup>2</sup>+"+numToCheck2+"x+"+ numToCheck3+"<br>" +quadratic(numToCheck1,numToCheck2,numToCheck3));
+    $("#quadratic-check-write").html(quadratic(numToCheck1,numToCheck2,numToCheck3));
 });
 $(document).on("click","#quadratic-check-clear", function(e){
     e.preventDefault();

@@ -2,6 +2,9 @@ function rng(y) {
     if(y>1000000000){
         return "Number too large, try again";
     }
+    if(y===0){
+        return "";
+    }
     for (var i=0;i<y.toString().length;i++){
         var digits=[0,1,2,3,4,5,6,7,8,9];
         if (digits.indexOf(Number(y.toString()[i]))===-1){

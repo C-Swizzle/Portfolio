@@ -11,20 +11,30 @@ function amountToCoins(cents) {
     var nickelCount=0;
     var pennyCount=0;
     while (x>0) {
-        if(x-10000>=0){
+    if($("#hundred-dollar-checkbox").is(':checked')){
+        while(x>=10000){
+            if(x-10000>=0){
             x-=10000;
             hundredDollarCount++
-        } else if(x-5000>=0){
-            x-=5000;
-            fiftyDollarCount++;
-        } else if(x-2000>=0){
+            }
+    } 
+}
+    if($("#fifty-dollar-checkbox").is(':checked')){
+        while(x>=5000){
+            if(x-5000>=0){
+                x-=5000;
+                fiftyDollarCount++;
+            }
+    }
+    } 
+      if(x-2000>=0){
             x-=2000;
             twentyDollarCount++;
         } else if(x-1000>=0){
             x-=1000;
             tenDollarCount++;
-        } else if(x-5000>=0){
-            x-=5000;
+        } else if(x-500>=0){
+            x-=500;
             fiveDollarCount++;
         }else if(x-100>=0){
             x-=100;
@@ -99,6 +109,7 @@ function amountToCoins(cents) {
 }
 $(document).on("click","#dollars-check-submit",function(e){
     e.preventDefault();
+    console.log($("#fifty-dollar-checkbox").is(':checked'));
     var dollars=Number($("#dollars-check-input").val());
     if (Math.floor(dollars*100)/100!==dollars||dollars<=0){
         $("#dollars-check-write").text("Input a valid dollars and cents number!");

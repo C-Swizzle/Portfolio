@@ -1,5 +1,8 @@
   
       function factorialize(x) {
+        if(x===0){
+          return "";
+      }
         var temp=Number(x);
         for (var i=1; i<temp; i++) {
           x=x*i;
