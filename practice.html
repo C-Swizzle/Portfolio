@@ -16,6 +16,8 @@
   <script src="practice/fibonacci.js"></script>
   <script src="practice/unique-chars.js"></script>
   <script src="practice/quadratic.js"></script>
+  <script src="practice/rng.js"></script>
+  <script src="practice/amount-to-coins.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -122,6 +124,37 @@
               </div>
               
             </div></div>
+            <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+                <img class="card-img-top" src="assets/images/train.jpg" style="width:100%;height:100px;" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Random Number Generation</h5>
+                  <p class="card-text">Checks how many tries it takes hit 1 out of the number you input.
+                    It is expected to give different answers for the same number, as each time is different RNG.
+                  </p>
+                  
+                  <form>
+                    <input type="text" id="rng-check-input">
+                  <button  id="rng-check-submit"class="btn btn-primary">Submit</button>
+                </form>
+                <p class="card-text" id="rng-check-write"></p>
+                </div>
+                
+              </div></div>
+              <div class="col-md-4 border border-primary"><div class="card" style="width: 100%;">
+                  <img class="card-img-top" src="assets/images/train.jpg" style="width:100%;height:100px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Dollars and Cents</h5>
+                    <p class="card-text">Given an amount of dollars and cents as a number, it will tell you the most efficient way to break down that dollar amount.
+                    </p>
+                    
+                    <form>
+                      <input type="text" id="dollars-check-input">
+                    <button  id="dollars-check-submit"class="btn btn-primary">Submit</button>
+                  </form>
+                  <p class="card-text" id="dollars-check-write"></p>
+                  </div>
+                  
+                </div></div>
         </div>
 
       </div>
