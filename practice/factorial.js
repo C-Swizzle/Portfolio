@@ -72,7 +72,7 @@
           }
           return negCheck + returnArray.join("")+"."+num.toString().split(".")[1];
       }
-      return num;
+      return negCheck + num;
   }
     $(document).on("click","#factorial-check-submit",function(e){
       e.preventDefault();

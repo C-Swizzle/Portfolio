@@ -17,5 +17,5 @@ $(document).on("click","#prime-check-submit", function(e){
         $("#prime-check-write").text("Enter a positive integer!");
         return;
     }
-    $("#prime-check-write").text(prime(numToCheck));
+    $("#prime-check-write").html(prime(numToCheck));
 })

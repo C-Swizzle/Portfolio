@@ -70,7 +70,7 @@ function addCommas(num){
         }
         return negCheck + returnArray.join("")+"."+num.toString().split(".")[1];
     }
-    return num;
+    return negCheck + num;
 }
 $(document).on("click","#fibonacci-check-submit", function(e){
     e.preventDefault();

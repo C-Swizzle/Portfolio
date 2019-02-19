@@ -67,11 +67,12 @@
                 <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title text-primary">Dollars and Cents</h5>
-                  <p class="card-text">Given an amount of dollars and cents as a number, it will tell you the most efficient way to break down that dollar amount.
+                  <p class="card-text">Given an amount of dollars and cents as a number, it will tell you the most efficient way to break down that dollar amount. By default it uses 
+                    $20 bills as the largest dollar amount, but it will support $100 and $50 dollar bills as well!
                   </p>
                   
                   <form >
-                    <input  type="text" id="dollars-check-input">
+                    <input  type="text" id="dollars-check-input"placeholder="Positive number">
                   <button  id="dollars-check-submit"class="btn btn-primary">Submit</button>
                   <div class="form-check">
                     <input  type="checkbox" class="form-check-input" id="hundred-dollar-checkbox">
@@ -91,15 +92,15 @@
               <img class="card-img-top" src="assets/images/mountains.png" style="width:100%;height:100px;" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-primary">Fibonacci Generator</h5>
-                <p class="card-text">Generate a Fibonacci Sequence of your own! Tell it the first two terms and how many terms you'd like to see (less than 100)!
+                <p class="card-text">Generate a Fibonacci Sequence of your own! Tell it the first two terms and how many terms you'd like to see (less than 101)!
                 </p>
                 <form >
                   <label for="fibonacci-check-input-term1">First term</label><br>
-                  <input  type="text" id="fibonacci-check-input-term1"><br>
+                  <input  type="text" id="fibonacci-check-input-term1"placeholder="Number"><br>
                   <label for="fibonacci-check-input-term2">Second term</label><br>
-                  <input  type="text" id="fibonacci-check-input-term2"><br>
+                  <input  type="text" id="fibonacci-check-input-term2"placeholder="Number"><br>
                   <label for="fibonacci-check-input-many">How many terms to generate</label><br>
-                  <input  type="text" id="fibonacci-check-input-many"><br><br>
+                  <input  type="text" id="fibonacci-check-input-many"placeholder="Positive integer < 101"><br><br>
                 <button  id="fibonacci-check-submit"class="btn btn-primary">Submit</button>
                 <button  id="fibonacci-check-clear" class="btn btn-danger">Clear</button>
               </form>
@@ -117,11 +118,11 @@
                 </p>
                 <form >
                   <label for="quadratic-check-input-a">a</label><br>
-                  <input  type="text" id="quadratic-check-input-a"><br>
+                  <input  type="text" id="quadratic-check-input-a"placeholder="Number"><br>
                   <label for="quadratic-check-input-b">b</label><br>
-                  <input  type="text" id="quadratic-check-input-b"><br>
+                  <input  type="text" id="quadratic-check-input-b"placeholder="Number"><br>
                   <label for="quadratic-check-input-c">c</label><br>
-                  <input  type="text" id="quadratic-check-input-c"><br><br>
+                  <input  type="text" id="quadratic-check-input-c"placeholder="Number"><br><br>
                 <button  id="quadratic-check-submit"class="btn btn-primary">Submit</button>
                 <button  id="quadratic-check-clear" class="btn btn-danger">Clear</button>
               </form>
@@ -139,7 +140,7 @@
                   </p>
                   
                   <form >
-                    <input  type="text" id="rng-check-input">
+                    <input  type="text" id="rng-check-input"placeholder="Positive number">
                   <button  id="rng-check-submit"class="btn btn-primary">Submit</button>
                 </form>
                 <p class="card-text" id="rng-check-write"></p>
@@ -155,7 +156,7 @@
                     </p>
                     <p class="card-subtitle">Example: "Hello how are you" becomes "helo waryu"</p><br>
                     <form >
-                      <input  type="text" id="unique-char-check-input">
+                      <input  type="text" id="unique-char-check-input"placeholder="String">
                     <button  id="unique-char-check-submit"class="btn btn-primary">Submit</button>
                   </form>
                   <p class="card-text" id="unique-char-check-write"></p>
@@ -171,7 +172,7 @@
         
                       </p>
                       <form >
-                        <input  type="text" id="prime-check-input">
+                        <input  type="text" id="prime-check-input"placeholder="Positive Integer">
                       <button  id="prime-check-submit"class="btn btn-primary">Submit</button>
                     </form>
                     <p class="card-text" id="prime-check-write"></p>
@@ -186,7 +187,7 @@
                       </p>
                       
                       <form >
-                        <input  type="text" id="factorial-check-input">
+                        <input  type="text" id="factorial-check-input"placeholder="Positive Integer">
                       <button  id="factorial-check-submit"class="btn btn-primary">Submit</button>
                     </form>
                     <p class="card-text" id="factorial-check-write"></p>
@@ -200,7 +201,7 @@
                       <p class="card-text">Given a number, add commas to it! Works with decimals and negatives as well!</p>
                       
                       <form >
-                        <input  type="text" id="comma-check-input">
+                        <input  type="text" id="comma-check-input"placeholder="Number">
                       <button  id="comma-check-submit"class="btn btn-primary">Submit</button>
                     </form>
                     <p class="card-text" id="comma-check-write"></p>

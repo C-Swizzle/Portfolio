@@ -47,7 +47,7 @@ function addCommas(num){
         }
         return negCheck + returnArray.join("")+"."+num.toString().split(".")[1];
     }
-    return num;
+    return negCheck + num;
 }
 console.log(addCommas(-5596.55888));
 $(document).on("click","#comma-check-submit",function(e){
