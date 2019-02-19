@@ -5,7 +5,7 @@ function fibonacci(x,y,z) {
         newarray[i]=newarray[i-1] + newarray[i-2];
 
     }
-    return newarray.join("  ");
+    return newarray.join(",  ");
 }
 console.log(fibonacci(1,2));
 
@@ -31,4 +31,8 @@ $(document).on("click","#fibonacci-check-submit", function(e){
     // console.log(numToCheck);
     
     $("#fibonacci-check-write").text(fibonacci(numToCheck1,numToCheck2,generateMany));
-})
+});
+$(document).on("click","#fibonacci-check-clear", function(e){
+    e.preventDefault();
+    $("#fibonacci-check-write").empty();
+});
