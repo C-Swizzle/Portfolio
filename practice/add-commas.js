@@ -1,4 +1,7 @@
 function addCommas(num){
+    if(Number(num)!==Number(num) || num===Infinity || num===undefined){
+        return num;
+    }
     num=Number(num);
     var nlength=num.toString().length;
     var negCheck;
