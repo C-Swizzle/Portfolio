@@ -76,5 +76,8 @@
   }
     $(document).on("click","#factorial-check-submit",function(e){
       e.preventDefault();
+      if(Number($("#factorial-check-input").val())>150){
+       return $("#factorial-check-write").text("Number too large");
+      }
       $("#factorial-check-write").text(factorialize(Number($("#factorial-check-input").val())));
     })
