@@ -2,6 +2,8 @@
       function factorialize(x) {
         if(x===0){
           return "";
+      } else if(x>170){
+        return "Enter a smaller number!";
       }
         var temp=Number(x);
         for (var i=1; i<temp; i++) {
